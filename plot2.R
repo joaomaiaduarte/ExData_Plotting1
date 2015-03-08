@@ -20,6 +20,6 @@ time<-strptime(paste(subsetData$Date, subsetData$Time), format="%Y-%m-%d %H:%M:%
 
 #plot data to png device
 png(filename = "plot2.png", width = 480, height = 480)
-plot(time,subsetData$Global_active_power,type = "l", ylab = "Global Active Power (kilowatts)")
+plot(time,subsetData$Global_active_power,type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
 dev.off()
 

@@ -22,10 +22,10 @@ png(filename = "plot4.png", width = 480, height = 480)
 par(mfcol = c(2,2))
 
 #plot 1
-plot(time,subsetData$Global_active_power,type = "l", ylab = "Global Active Power (kilowatts)")
+plot(time,subsetData$Global_active_power,type = "l", ylab = "Global Active Power (kilowatts)", xlab = "")
 
 #plot 2
-plot(time,subsetData$Sub_metering_1,type = "l", ylab = "Energy sub metering")
+plot(time,subsetData$Sub_metering_1,type = "l", ylab = "Energy sub metering",xlab = "")
 lines(time,subsetData$Sub_metering_2, col="red")
 lines(time,subsetData$Sub_metering_3, col="blue")
 legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col = c("black","red","blue"), lty="solid")

@@ -19,7 +19,7 @@ time<-strptime(paste(subsetData$Date, subsetData$Time), format="%Y-%m-%d %H:%M:%
 
 #plot data to png device
 png(filename = "plot3.png", width = 480, height = 480)
-plot(time,subsetData$Sub_metering_1,type = "l", ylab = "Energy sub metering")
+plot(time,subsetData$Sub_metering_1,type = "l", ylab = "Energy sub metering", xlab = "")
 lines(time,subsetData$Sub_metering_2, col="red")
 lines(time,subsetData$Sub_metering_3, col="blue")
 legend("topright", legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"), col = c("black","red","blue"), lty="solid")
